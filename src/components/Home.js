@@ -35,7 +35,7 @@ export default function Home() {
                   </div>
                   <div className="content">
                     <div className="title">{ele.title}</div>
-                    <div className="excerpt">{ele.content}</div>
+                    {/* <div className="excerpt">{ele.content}</div> */}
                     <LinkContainer to={`/news/${ele._id}`}>
                       <Button className='mt-3' variant="primary">Read More</Button>
                     </LinkContainer>
