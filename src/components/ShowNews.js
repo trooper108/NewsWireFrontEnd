@@ -15,7 +15,7 @@ export default function ShowNews() {
   const navigate = useNavigate();
   const deleteNewsFromDB = async () =>{
     try {
-      await axios.delete(`http://localhost:3001/news/${params.id}`);
+      await axios.delete(`https://newswirebackend.onrender.com/news/${params.id}`);
       navigate('/');
       toast.success('Successfully Deleted News!', {
         position: "top-right",

@@ -41,7 +41,7 @@ export default function EditNews() {
         author : values.author,
         image : values.image,
       }
-      await axios.patch(`http://localhost:3001/news/${params.id}`,{news});
+      await axios.patch(`https://newswirebackend.onrender.com/news/${params.id}`,{news});
       toast.success('Successfully Added news', {
         position: "top-right",
         autoClose: 5000,

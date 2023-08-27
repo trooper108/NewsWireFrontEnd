@@ -16,7 +16,7 @@ export default function NewNews() {
         author : values.author,
         image : values.image,
       }
-       await axios.post(`http://localhost:3001/news`,{news});
+       await axios.post(`https://newswirebackend.onrender.com/news`,{news});
       Navigate('/');
       toast.success('Successfully Added news', {
         position: "top-right",

@@ -8,7 +8,7 @@ import {toast} from 'react-toastify'
 export default function Contact() {
   const sendEmail = async(values)=>{
     try {
-      await axios.post(`http://localhost:3001/contact`,{values})
+      await axios.post(`https://newswirebackend.onrender.com/contact`,{values})
       toast.success('Successfully Send Email', {
         position: "top-right",
         autoClose: 5000,
